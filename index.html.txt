@@ -1,22 +1,27 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-card">
+            <h1>My Awesome Game</h1>
+            <p class="description">Download and play our exciting game!</p>
+            
+            <button id="downloadBtn" class="download-btn">
+                <span id="btnText">Download Game</span>
+                <span id="spinner" class="spinner" style="display:none;"></span>
+            </button>
+            
+            <p class="file-info">File: game.exe | Size: ~50 MB</p>
+            <p id="status" class="status"></p>
+        </div>
+    </div>
 
-<div class="wrapper">
-								<div class="tabs">
-							<span class="tab">Москва</span> /
-							<span class="tab">Караганда</span>
-							
-						</div>
-						<div class="tab__content">
-							<div class="tab__item">+7 (999) 999-99-99
-							</div>
-							<div class="tab__item">+7 (888) 999-99-88</div>
-							 
-						</div>
-						</div>
-   js 
-   
-	$(".wrapper .tab").click(function() {
-		$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".tab__item").hide().eq($(this).index()).fadeIn()
-
-	}).eq(0).addClass("active"); 
+    <script src="script.js"></script>
+</body>
+</html>
